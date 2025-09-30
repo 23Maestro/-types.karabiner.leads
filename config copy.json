@@ -1,0 +1,547 @@
+{
+  "actions" : [
+    {
+      "actions" : [
+        {
+          "key" : "p",
+          "type" : "application",
+          "value" : "/Applications/Adobe Premiere Pro 2025/Adobe Premiere Pro 2025.app"
+        },
+        {
+          "key" : "y",
+          "type" : "application",
+          "value" : "/Applications/Akiflow.app"
+        },
+        {
+          "key" : "a",
+          "type" : "application",
+          "value" : "/Applications/Asana.app"
+        },
+        {
+          "key" : "s",
+          "type" : "application",
+          "value" : "/Applications/Slack.app"
+        },
+        {
+          "key" : "n",
+          "type" : "application",
+          "value" : "/Applications/Notion.app"
+        },
+        {
+          "key" : "t",
+          "type" : "application",
+          "value" : "/System/Applications/Utilities/Terminal.app"
+        },
+        {
+          "key" : "z",
+          "type" : "application",
+          "value" : "/Applications/Zen.app"
+        },
+        {
+          "key" : "c",
+          "type" : "application",
+          "value" : "/Applications/Canva.app"
+        },
+        {
+          "key" : "k",
+          "type" : "application",
+          "value" : "/Applications/NordPass.app"
+        },
+        {
+          "key" : "e",
+          "type" : "application",
+          "value" : "/Applications/Elgato Stream Deck.app"
+        }
+      ],
+      "iconPath" : "/Applications/Leader Key.app",
+      "key" : "o",
+      "label" : "Open",
+      "type" : "group"
+    },
+    {
+      "actions" : [
+        {
+          "iconPath" : "character.bubble.fill",
+          "key" : "a",
+          "label" : "AI Chat",
+          "type" : "url",
+          "value" : "raycast://extensions/raycast/raycast-ai/ai-chat"
+        },
+        {
+          "actions" : [
+            {
+              "iconPath" : "rectangle.and.pencil.and.ellipsis",
+              "key" : "n",
+              "label" : "New",
+              "type" : "url",
+              "value" : "raycast://extensions/raycast/raycast-notes/create-note"
+            },
+            {
+              "iconPath" : "sparkle.magnifyingglass",
+              "key" : "s",
+              "label" : "Search",
+              "type" : "url",
+              "value" : "raycast://extensions/raycast/raycast-notes/search-notes"
+            }
+          ],
+          "iconPath" : "/System/Applications/Stickies.app",
+          "key" : "n",
+          "label" : "Notes",
+          "type" : "group"
+        },
+        {
+          "iconPath" : "/System/Applications/Font Book.app",
+          "key" : "f",
+          "label" : "Spell Check",
+          "type" : "url",
+          "value" : "raycast://ai-commands/fix-spelling-and-grammar"
+        },
+        {
+          "iconPath" : "/Applications/FastScripts.app",
+          "key" : "s",
+          "label" : "New Snippet",
+          "type" : "url",
+          "value" : "raycast://extensions/raycast/snippets/create-snippet"
+        },
+        {
+          "iconPath" : "/Applications/Setapp/Supercharge.app",
+          "key" : "q",
+          "label" : "New Quicklink",
+          "type" : "url",
+          "value" : "raycast://extensions/raycast/raycast/create-quicklink"
+        },
+        {
+          "iconPath" : "/Applications/ClipboardViewer.app",
+          "key" : "c",
+          "label" : "Clipboard History",
+          "type" : "url",
+          "value" : "raycast://extensions/raycast/clipboard-history/clipboard-history"
+        },
+        {
+          "iconPath" : "return.left",
+          "key" : "l",
+          "label" : "Last Command",
+          "type" : "url",
+          "value" : "raycast://extensions/raycast/raycast/run-last-command"
+        }
+      ],
+      "iconPath" : "/Applications/Raycast.app",
+      "key" : "r",
+      "label" : "Raycast",
+      "type" : "group"
+    },
+    {
+      "actions" : [
+        {
+          "iconPath" : "arrowshape.up.fill",
+          "key" : "↑",
+          "label" : "Top-Half",
+          "type" : "url",
+          "value" : "raycast://extensions/raycast/window-management/top-half"
+        },
+        {
+          "iconPath" : "arrowshape.left.fill",
+          "key" : "←",
+          "label" : "Left-Half",
+          "type" : "url",
+          "value" : "raycast://extensions/raycast/window-management/left-half"
+        },
+        {
+          "iconPath" : "arrowshape.down.fill",
+          "key" : "↓",
+          "label" : "Bottom-Half",
+          "type" : "url",
+          "value" : "raycast://extensions/raycast/window-management/bottom-half"
+        },
+        {
+          "iconPath" : "arrowshape.right.fill",
+          "key" : "→",
+          "label" : "Right-Half",
+          "type" : "url",
+          "value" : "raycast://extensions/raycast/window-management/right-half"
+        },
+        {
+          "iconPath" : "rectangle.expand.vertical",
+          "key" : "x",
+          "label" : "Max",
+          "type" : "url",
+          "value" : "raycast://extensions/raycast/window-management/maximize"
+        },
+        {
+          "iconPath" : "inset.filled.topright.rectangle",
+          "key" : "e",
+          "label" : "TR 1/4",
+          "type" : "url",
+          "value" : "raycast://extensions/raycast/window-management/top-right-quarter"
+        },
+        {
+          "iconPath" : "inset.filled.tophalf.rectangle",
+          "key" : "w",
+          "label" : "Top 1/4",
+          "type" : "url",
+          "value" : "raycast://extensions/raycast/window-management/top-center-two-thirds"
+        },
+        {
+          "iconPath" : "inset.filled.topleft.rectangle",
+          "key" : "q",
+          "label" : "TL 1/4",
+          "type" : "url",
+          "value" : "raycast://extensions/raycast/window-management/top-left-quarter"
+        },
+        {
+          "iconPath" : "inset.filled.bottomtrailing.rectangle",
+          "key" : "c",
+          "label" : "BR 1/4",
+          "type" : "url",
+          "value" : "raycast://extensions/raycast/window-management/bottom-right-quarter"
+        },
+        {
+          "iconPath" : "inset.filled.center.rectangle",
+          "key" : "s",
+          "label" : "Center",
+          "type" : "url",
+          "value" : "raycast://extensions/raycast/window-management/center"
+        },
+        {
+          "iconPath" : "inset.filled.bottomleading.rectangle",
+          "key" : "z",
+          "label" : "BL 1/4",
+          "type" : "url",
+          "value" : "raycast://extensions/raycast/window-management/bottom-left-quarter"
+        },
+        {
+          "iconPath" : "inset.filled.topleft.bottomleft.righthalf.rectangle",
+          "key" : "3",
+          "label" : "R 2/3",
+          "type" : "url",
+          "value" : "raycast://extensions/raycast/window-management/last-two-thirds"
+        },
+        {
+          "iconPath" : "align.horizontal.center.fill",
+          "key" : "2",
+          "label" : "C 2/3",
+          "type" : "url",
+          "value" : "raycast://extensions/raycast/window-management/center-two-thirds"
+        },
+        {
+          "iconPath" : "inset.filled.lefthalf.topright.bottomright.rectangle",
+          "key" : "1",
+          "label" : "L 2/3",
+          "type" : "url",
+          "value" : "raycast://extensions/raycast/window-management/first-two-thirds"
+        },
+        {
+          "iconPath" : "arrow.down.left.and.arrow.up.right",
+          "key" : "a",
+          "label" : "Almost Max",
+          "type" : "url",
+          "value" : "raycast://extensions/raycast/window-management/almost-maximize"
+        },
+        {
+          "iconPath" : "square.resize",
+          "key" : "r",
+          "label" : "Reasonable",
+          "type" : "url",
+          "value" : "raycast://extensions/raycast/window-management/reasonable-size"
+        }
+      ],
+      "iconPath" : "/Applications/Magnet.app",
+      "key" : "w",
+      "label" : "Window Manager",
+      "type" : "group"
+    },
+    {
+      "actions" : [
+        {
+          "iconPath" : "autostartstop",
+          "key" : "r",
+          "label" : "Restart",
+          "type" : "url",
+          "value" : "raycast://extensions/raycast/system/restart"
+        },
+        {
+          "iconPath" : "power.circle.fill",
+          "key" : "p",
+          "label" : "Power Down",
+          "type" : "url",
+          "value" : "raycast://extensions/raycast/system/shut-down"
+        },
+        {
+          "iconPath" : "powersleep",
+          "key" : "z",
+          "label" : "Sleep",
+          "type" : "url",
+          "value" : "raycast://extensions/raycast/system/sleep"
+        },
+        {
+          "key" : "b",
+          "label" : "Bluetooth",
+          "type" : "url",
+          "value" : "raycast://extensions/VladCuciureanu/toothpick/manage-bluetooth-connections"
+        },
+        {
+          "iconPath" : "speaker.wave.2.fill",
+          "key" : "s",
+          "label" : "SoundSource",
+          "type" : "url",
+          "value" : "kmtrigger://macro=2E12E85D-08A2-4FA3-B75E-07D97471CC17"
+        },
+        {
+          "iconPath" : "desktopcomputer.and.macbook",
+          "key" : "o",
+          "label" : "Yagi On",
+          "type" : "url",
+          "value" : "kmtrigger://macro=451851AB-DFC9-4128-B385-F76D003E2EBF"
+        },
+        {
+          "iconPath" : "stop.circle.fill",
+          "key" : "f",
+          "label" : "Yagi Off",
+          "type" : "url",
+          "value" : "kmtrigger://macro=BC7F6237-712B-4175-B1CB-F21536764003"
+        },
+        {
+          "iconPath" : "90.arrow.trianglehead.clockwise",
+          "key" : "l",
+          "label" : "Clean Keyboard",
+          "type" : "url",
+          "value" : "kmtrigger://macro=01F19304-B684-443B-9E7F-2AD0E9B4BC83"
+        },
+        {
+          "iconPath" : "xmark",
+          "key" : "q",
+          "label" : "Quit All",
+          "type" : "url",
+          "value" : "raycast://extensions/raycast/system/quit-all-apps"
+        },
+        {
+          "iconPath" : "x.square.fill",
+          "key" : "k",
+          "label" : "Kill Menu",
+          "type" : "url",
+          "value" : "raycast://extensions/rolandleth/kill-process/index"
+        },
+        {
+          "iconPath" : "lightbulb.max",
+          "key" : "a",
+          "label" : "Appearance",
+          "type" : "url",
+          "value" : "raycast://extensions/raycast/system/toggle-system-appearance"
+        }
+      ],
+      "iconPath" : "/Applications/CleanMyMac.app",
+      "key" : "m",
+      "label" : "iMac",
+      "type" : "group"
+    },
+    {
+      "actions" : [
+        {
+          "iconPath" : "restart.circle.fill",
+          "key" : "s",
+          "label" : "Start Timer",
+          "type" : "url",
+          "value" : "kmtrigger://macro=D763DC18-A280-43BF-85CD-4553D0CC112D"
+        },
+        {
+          "iconPath" : "arrow.down.applewatch",
+          "key" : "u",
+          "label" : "Timing Menu",
+          "type" : "url",
+          "value" : "kmtrigger://macro=851A9DB4-68F5-4D72-AAE7-0F07BBE92686"
+        },
+        {
+          "key" : "o",
+          "label" : "Open Timing",
+          "type" : "application",
+          "value" : "/Applications/Timing.app"
+        },
+        {
+          "iconPath" : "timer",
+          "key" : "e",
+          "label" : "Edit Timer",
+          "type" : "url",
+          "value" : "kmtrigger://macro=F546571A-E526-403F-BFC8-CC0BA8B40B32"
+        }
+      ],
+      "iconPath" : "/Applications/Timing.app",
+      "key" : "h",
+      "label" : "Projects",
+      "type" : "group"
+    },
+    {
+      "actions" : [
+        {
+          "key" : "s",
+          "label" : "Select/Move Next",
+          "type" : "url",
+          "value" : "kmtrigger://macro=8E8C96B9-1504-4468-9FE6-287477A24E48"
+        },
+        {
+          "key" : "a",
+          "label" : "Adjustment Layer",
+          "type" : "url",
+          "value" : "kmtrigger://macro=3B28DD84-E5E1-4C75-B022-7958D7C4466E"
+        },
+        {
+          "key" : "f",
+          "label" : "Freeze",
+          "type" : "url",
+          "value" : "kmtrigger://macro=1E58B412-9880-4805-B7A9-E55771F31860"
+        }
+      ],
+      "iconPath" : "/Applications/Adobe Premiere Pro 2025/Adobe Premiere Pro 2025.app",
+      "key" : "p",
+      "label" : "Premiere Pro",
+      "type" : "group"
+    },
+    {
+      "actions" : [
+        {
+          "iconPath" : "/System/Applications/FindMy.app",
+          "key" : "s",
+          "label" : "Search Task List",
+          "type" : "url",
+          "value" : "kmtrigger://macro=73B3C9BF-67F9-4AB3-8EED-5795F0335359"
+        },
+        {
+          "iconPath" : "/Applications/Adobe Premiere Pro 2025/Adobe Premiere Pro 2025.app",
+          "key" : "u",
+          "label" : "YouTube Titles",
+          "type" : "url",
+          "value" : "raycast://extensions/jerami_singleton/dropbox-folder-names/youtube-titles"
+        },
+        {
+          "key" : "i",
+          "label" : "ID Format App",
+          "type" : "application",
+          "value" : "/Applications/ID Format.app"
+        },
+        {
+          "iconPath" : "/Applications/Dropover.app",
+          "key" : "d",
+          "label" : "DBox File Request",
+          "type" : "url",
+          "value" : "raycast://extensions/jerami_singleton/dropbox-folder-names/dropbox-folder-names"
+        },
+        {
+          "iconPath" : "/System/Applications/Mail.app",
+          "key" : "t",
+          "label" : "Email Templates",
+          "type" : "url",
+          "value" : "kmtrigger://macro=AE7F0DAF-EEAD-4E13-8481-4DCF15110A03"
+        },
+        {
+          "iconPath" : "/Applications/YouTube.app",
+          "key" : "v",
+          "label" : "View YouTube Uploads",
+          "type" : "url",
+          "value" : "raycast://extensions/jerami_singleton/playerid-updates/list-prospect-id-uploads"
+        },
+        {
+          "iconPath" : "/Applications/Notion.app",
+          "key" : "n",
+          "label" : "New Task",
+          "type" : "url",
+          "value" : "raycast://extensions/HenriChabrand/notion/create-database-page?launchContext=%7B%22defaults%22%3A%7B%22database%22%3A%2219f4c8bd-6c26-805b-9929-dfa8eb290a86%22%2C%22property%3A%3Aselect%3A%3Ay%255C%257De%22%3A%22_select_null_%22%2C%22property%3A%3Aselect%3A%3AE%257CPY%22%3A%22_select_null_%22%2C%22property%3A%3Astatus%3A%3A%253BjEz%22%3A%22a6fa905f-8576-42df-bf5f-3b62e42b49c6%22%2C%22property%3A%3Aselect%3A%3ACozl%22%3A%22_select_null_%22%2C%22property%3A%3Aselect%3A%3ABjQv%22%3A%22_select_null_%22%2C%22property%3A%3Amulti_select%3A%3AeY%253EE%22%3A%5B%5D%2C%22property%3A%3Apeople%3A%3AM%253B%2560o%22%3A%5B%5D%7D%2C%22visiblePropIds%22%3A%5B%22title%22%2C%22y%255C%257De%22%2C%22eY%253EE%22%2C%22IsP%253E%22%2C%22HBZF%22%2C%22E%257CPY%22%2C%22%253BjEz%22%5D%7D"
+        },
+        {
+          "iconPath" : "star",
+          "key" : "p",
+          "label" : "Post PlayerID",
+          "type" : "url",
+          "value" : "raycast://extensions/jerami_singleton/playerid-updates/new-playerid-video"
+        },
+        {
+          "key" : "e",
+          "label" : "Player Profile",
+          "type" : "url",
+          "value" : "kmtrigger://macro=46493467-C508-441E-94F8-DE01A1222954"
+        },
+        {
+          "iconPath" : "envelope.and.arrow.trianglehead.branch",
+          "key" : "↵",
+          "label" : "Send Email",
+          "type" : "url",
+          "value" : "kmtrigger://macro=3E4D4026-75BE-4AB1-95BB-9C04CCAB2BA5"
+        },
+        {
+          "iconPath" : "/Applications/Notion Calendar.app",
+          "key" : "c",
+          "label" : "Check Notion",
+          "type" : "url",
+          "value" : "raycast://extensions/notion/notion/search-page"
+        }
+      ],
+      "iconPath" : "/Applications/ID Format.app",
+      "key" : "i",
+      "label" : "Prospect ID",
+      "type" : "group"
+    },
+    {
+      "actions" : [
+        {
+          "iconPath" : "/Applications/Setapp/DevUtils.app",
+          "key" : "h",
+          "label" : "Home",
+          "type" : "url",
+          "value" : "raycast://extensions/timothy_boye/open-folders/listFolders"
+        },
+        {
+          "iconPath" : "/System/Library/CoreServices/Finder.app",
+          "key" : "g",
+          "label" : "Search Finder",
+          "type" : "url",
+          "value" : "kmtrigger://macro=CE9DACF7-4400-43CB-BD41-20C844E9E70F"
+        },
+        {
+          "iconPath" : "/Applications/Raycast.app",
+          "key" : "f",
+          "label" : "Find Files",
+          "type" : "url",
+          "value" : "raycast://extensions/raycast/file-search/search-files"
+        },
+        {
+          "iconPath" : "flask.fill",
+          "key" : "r",
+          "label" : "RayLab",
+          "type" : "folder",
+          "value" : "/Users/singleton23/Raycast"
+        }
+      ],
+      "iconPath" : "/Applications/Setapp/Default Folder X.app",
+      "key" : "x",
+      "label" : "X Folder Dial",
+      "type" : "group"
+    },
+    {
+      "actions" : [
+        {
+          "key" : "g",
+          "label" : "ELU Uploads",
+          "type" : "url",
+          "value" : "kmtrigger://macro=77FD2C6F-02EF-4D77-A2AE-CFD3D3E6C7E6"
+        },
+        {
+          "iconPath" : "/Applications/Asana.app",
+          "key" : "t",
+          "label" : "Asana Tasks",
+          "type" : "url",
+          "value" : "raycast://extensions/raycast/asana/my-tasks"
+        },
+        {
+          "iconPath" : "/Applications/Numbers.app",
+          "key" : "e",
+          "label" : "Exports",
+          "type" : "url",
+          "value" : "raycast://extensions/jerami_singleton/client-exports/nursehub-exports"
+        }
+      ],
+      "iconPath" : "/System/Library/CoreServices/Applications/Feedback Assistant.app",
+      "key" : "n",
+      "label" : "NurseHub",
+      "type" : "group"
+    }
+  ],
+  "type" : "group"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "karabiner-config",
+  "version": "1.0.0",
+  "description": "Karabiner-Elements configuration using TypeScript",
+  "scripts": {
+    "build": "tsx src/index.ts",
+    "watch": "tsx watch src/index.ts",
+    "dev": "npm run watch"
+  },
+  "dependencies": {
+    "karabiner.ts": "latest"
+  },
+  "devDependencies": {
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  }
+}
+
