@@ -8,12 +8,6 @@ import {
   toHyper,
 } from 'karabiner.ts'
 
-import {
-  leaderKeyOpen,
-  leaderKeyRaycast,
-  leaderKeyWindows,
-  leaderKeyEscape,
-} from './leader-key'
 
 // Profile name - update this to match your Karabiner profile
 const PROFILE_NAME = 'Default'
@@ -139,22 +133,24 @@ const cmdSemicolonBackspace = rule('left-command + semicolon to delete_or_backsp
 // DOUBLE-TAP CAPS LOCK TOGGLE
 // =============================================================================
 
-// Left Control: double-tap → Caps Lock toggle
-const leftControlDoubleTap = rule('Left Control: double-tap → Caps Lock toggle').manipulators([
-  // Second tap within window = toggle Caps Lock
+// Left Control: tap = Escape; double-tap = Caps Lock; hold = Control
+const leftControlEscape = rule('Left Control: tap = Escape; double-tap = Caps Lock; hold = Control').manipulators([
+  // Double-tap = Caps Lock toggle
   map('left_control')
     .condition(ifVar('lctrl_pressed', 1))
     .to(toSetVar('lctrl_pressed', 0))
     .to('caps_lock'),
-  // First tap = set variable
+  // Single tap = Escape, hold = Control
   map('left_control')
-    .to(toSetVar('lctrl_pressed', 1))
-    .to('left_control')
+    .toIfAlone('escape')
+    .toIfHeldDown('left_control')
     .toDelayedAction(
-      toSetVar('lctrl_pressed', 0), // if invoked
+      toSetVar('lctrl_pressed', 1), // if invoked (double-tap detected)
       toSetVar('lctrl_pressed', 0)  // if canceled
     )
     .parameters({
+      'basic.to_if_alone_timeout_milliseconds': 400,
+      'basic.to_if_held_down_threshold_milliseconds': 80,
       'basic.to_delayed_action_delay_milliseconds': 250,
     }),
 ])
@@ -262,9 +258,9 @@ writeToProfile(PROFILE_NAME, [
   hyperkeyArrows,
   
   // Dual-function keys
-  leftShiftEscape,
+  // leftShiftEscape, // Disabled: Left Shift is now just Shift
   tabControl,
-  backslashOption,
+  // backslashOption, // Disabled: Backslash used for Leader Key (Hyper+\)
   graveAccentModifier,
   openBracketModifier,
   closeBracketModifier,
@@ -279,14 +275,9 @@ writeToProfile(PROFILE_NAME, [
   cmdSemicolonBackspace,
   
   // Advanced features
-  leftControlDoubleTap,
+  leftControlEscape,
   premiereProModal,
   
-  // Leader Key System (Hyper+Space)
-  leaderKeyOpen,
-  leaderKeyRaycast,
-  leaderKeyWindows,
-  leaderKeyEscape,
 ])
 
 console.log('✅ Karabiner configuration written successfully!')

@@ -19,9 +19,9 @@ npm run build
 - **Hold Caps Lock** = Hyperkey (⌃⌥⇧⌘)
 - **Caps + U/H/J/K** = Arrow keys (↑/←/↓/→)
 
-### Leader Key (Hyper + Space)
+### Leader Key (Hyper + Backslash)
 
-1. Press **Hyper + Space** to activate
+1. Press **Hyper + \\** to activate
 2. Press a category key:
 
 #### **O** - Open Applications

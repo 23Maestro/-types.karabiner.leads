@@ -68,9 +68,9 @@ This will automatically rebuild your Karabiner configuration whenever you save c
   - Up/Down arrows adjust selected property
   - Escape to exit modal
 
-### Leader Key System (Hyper+Space)
+### Leader Key System (Hyper+Backslash)
 
-Press **Hyper+Space** to activate the leader key, then:
+Press **Hyper+\\** to activate the leader key, then:
 
 #### **O** - Open Applications
 - `p` → Adobe Premiere Pro
