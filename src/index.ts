@@ -1,11 +1,13 @@
 import {
   map,
+  mapDoubleTap,
   rule,
   writeToProfile,
   ifApp,
   ifVar,
   toSetVar,
   toHyper,
+  toApp,
 } from 'karabiner.ts'
 
 
@@ -130,28 +132,26 @@ const cmdSemicolonBackspace = rule('left-command + semicolon to delete_or_backsp
 ])
 
 // =============================================================================
-// DOUBLE-TAP CAPS LOCK TOGGLE
+// ESCAPE KEY: DOUBLE-TAP CAPS LOCK TOGGLE
 // =============================================================================
 
-// Left Control: tap = Escape; double-tap = Caps Lock; hold = Control
-const leftControlEscape = rule('Left Control: tap = Escape; double-tap = Caps Lock; hold = Control').manipulators([
-  // Double-tap = Caps Lock toggle
+// Escape: tap = Escape; double-tap = Toggle Caps Lock
+const escapeDoubleTap = rule('Escape: tap = Escape; double-tap = Caps Lock').manipulators([
+  mapDoubleTap('escape')
+    .to('caps_lock'),  // Double-tap toggles Caps Lock
+  
+  map('escape')
+    .toIfAlone('escape')  // Single tap = Escape
+])
+
+// Left Control: tap = Escape; hold = Control
+const leftControlEscape = rule('Left Control: tap = Escape; hold = Control').manipulators([
   map('left_control')
-    .condition(ifVar('lctrl_pressed', 1))
-    .to(toSetVar('lctrl_pressed', 0))
-    .to('caps_lock'),
-  // Single tap = Escape, hold = Control
-  map('left_control')
-    .toIfAlone('escape')
-    .toIfHeldDown('left_control')
-    .toDelayedAction(
-      toSetVar('lctrl_pressed', 1), // if invoked (double-tap detected)
-      toSetVar('lctrl_pressed', 0)  // if canceled
-    )
+    .toIfAlone('escape')  // Single tap = Escape
+    .toIfHeldDown('left_control')  // Hold = Control
     .parameters({
       'basic.to_if_alone_timeout_milliseconds': 400,
       'basic.to_if_held_down_threshold_milliseconds': 80,
-      'basic.to_delayed_action_delay_milliseconds': 250,
     }),
 ])
 
@@ -275,6 +275,7 @@ writeToProfile(PROFILE_NAME, [
   cmdSemicolonBackspace,
   
   // Advanced features
+  escapeDoubleTap,
   leftControlEscape,
   premiereProModal,
   
