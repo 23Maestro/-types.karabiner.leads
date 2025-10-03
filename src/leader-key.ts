@@ -16,11 +16,11 @@ const openFolder = (path: string) => ({
 // =============================================================================
 
 export const leaderKeyOpen = rule('Leader Key → O → Open Apps').manipulators([
-  // Activate "O" submenu
-  map('o')
-    .condition(ifVar('leader_active', 1))
-    .to(toSetVar('leader_submenu', 'open'))
-    .to(toSetVar('leader_active', 0)),
+  // DISABLED: Activate "O" submenu - conflicts with direct Hyper+O
+  // map('o')
+  //   .condition(ifVar('leader_active', 1))
+  //   .to(toSetVar('leader_submenu', 'open'))
+  //   .to(toSetVar('leader_active', 0)),
   
   // Apps in "O" menu
   map('p').condition(ifVar('leader_submenu', 'open'))
